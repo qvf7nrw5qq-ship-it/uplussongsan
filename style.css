@@ -2026,3 +2026,39 @@ padding:80px 20px;
     padding: 0 20px;
   }
 }
+/* 전화 / 카카오 버튼 크기 통일 */
+
+.btn-primary,
+.btn-kakao,
+.btn-ghost{
+  height:52px;
+  padding:0 26px;
+  font-size:17px;
+  font-weight:700;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+}
+
+/* 버튼 줄 정렬 */
+.hero_cta,
+.cta-box__actions,
+.topbar__actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+/* 모바일 */
+@media (max-width:768px){
+
+.btn-primary,
+.btn-kakao,
+.btn-ghost{
+  height:48px;
+  font-size:16px;
+  padding:0 22px;
+}
+
+}
