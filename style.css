@@ -1965,10 +1965,16 @@ padding:80px 20px;
   margin: 10px auto 0;
 }
 
-.qr_img,
-.ucrm_img {
+.qr_img {
   max-width: 170px;
   max-height: 170px;
+  width: auto;
+  height: auto;
+}
+
+.ucrm_img {
+  max-width: 155px;
+  max-height: 155px;
   width: auto;
   height: auto;
 }
