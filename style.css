@@ -1972,3 +1972,15 @@ padding:80px 20px;
  }
 
 }
+.qr_frame {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr_img,
+.ucrm_img{
+  max-height: 180px;
+  width: auto;
+}
