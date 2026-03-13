@@ -2068,3 +2068,74 @@ padding:80px 20px;
     font-size:16px;
   }
 }
+/* ===== 모바일 강제 덮어쓰기 최종본 ===== */
+@media (max-width: 768px) {
+
+  .qr_cards{
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .qr_card{
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .qr_frame{
+    height: 180px !important;
+    min-height: 180px !important;
+    margin-top: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .qr_img,
+  .ucrm_img{
+    width: 160px !important;
+    height: 160px !important;
+    max-width: 160px !important;
+    max-height: 160px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .hero_cta,
+  .cta-box__actions,
+  .topbar__actions,
+  .sticky-cta{
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .hero_cta .btn,
+  .cta-box__actions .btn,
+  .topbar__actions .btn,
+  .sticky-cta .btn,
+  .hero_cta a,
+  .cta-box__actions a,
+  .topbar__actions a,
+  .sticky-cta a,
+  .hero_cta button,
+  .cta-box__actions button,
+  .topbar__actions button,
+  .sticky-cta button{
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 50px !important;
+    padding: 0 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    border-radius: 999px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    appearance: none !important;
+  }
+}
