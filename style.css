@@ -1929,14 +1929,14 @@ padding:80px 20px;
 }
 
 /* ===== QR 이미지 크기 통일 ===== */
+/* ===== QR 이미지 크기 통일 ===== */
 .qr_img,
 .ucrm_img {
   width: 170px;
   height: 170px;
-  object-fit: contain;
+  object-fit: cover;
   margin-top: 10px;
 }
-
 /* ===== 모바일 최적화 ===== */
 @media (max-width: 768px) {
 
