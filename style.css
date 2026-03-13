@@ -1984,3 +1984,45 @@ padding:80px 20px;
   max-height: 180px;
   width: auto;
 }
+/* 매장전화 / 카카오톡 상담 버튼 공통 정리 */
+.btn_call,
+.btn_kakao,
+.cta_buttons a,
+.cta-box__actions a,
+.hero_buttons a {
+  min-width: 160px;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* 버튼 나란히 정렬 */
+.cta_buttons,
+.cta-box__actions,
+.hero_buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* 모바일에서는 너무 크지 않게 */
+@media (max-width: 768px) {
+  .btn_call,
+  .btn_kakao,
+  .cta_buttons a,
+  .cta-box__actions a,
+  .hero_buttons a {
+    min-width: 140px;
+    height: 48px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}
