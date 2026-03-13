@@ -1904,86 +1904,7 @@ padding:80px 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
-/* ===== QR 카드 정렬 ===== */
-.qr_cards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
 
-/* ===== QR 카드 스타일 ===== */
-.qr_card {
-  text-align: center;
-  padding: 15px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-/* 마우스 올리면 살짝 올라가는 효과 */
-.qr_card:hover {
-  transform: translateY(-4px);
-}
-/* ===== QR 카드 ===== */
-
-.qr_cards{
- display:grid;
- grid-template-columns:repeat(2,1fr);
- gap:24px;
- margin-top:30px;
-}
-
-.qr_card{
- text-align:center;
- padding:20px;
- background:#fff;
- border-radius:14px;
- box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-
-.qr_frame{
- display:flex;
- justify-content:center;
- margin-top:14px;
-}
-
-.qr_img,
-.ucrm_img{
- width:180px;
- height:180px;
- object-fit:contain;
-}
-
-/* ===== 모바일 ===== */
-
-@media (max-width:768px){
-
- .qr_cards{
-  grid-template-columns:1fr;
- }
-
- .qr_img,
- .ucrm_img{
-  width:170px;
-  height:170px;
- }
-
-}
-.qr_frame {
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.qr_img,
-.ucrm_img{
-  max-height: 180px;
-  width: auto;
-}
 /* 매장전화 / 카카오톡 상담 버튼 공통 정리 */
 .btn_call,
 .btn_kakao,
@@ -2061,4 +1982,89 @@ padding:80px 20px;
   padding:0 22px;
 }
 
+}
+/* ===== QR 카드 높이 통일 ===== */
+.qr_cards{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:24px;
+}
+
+.qr_card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.qr_frame{
+  margin-top:auto;
+  height:200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.qr_img,
+.ucrm_img{
+  width:180px;
+  height:180px;
+  object-fit:contain;
+  display:block;
+}
+
+/* ===== 버튼 크기 완전 통일 ===== */
+.hero_cta,
+.cta-box__actions,
+.sticky-cta,
+.topbar__actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.hero_cta .btn,
+.cta-box__actions .btn,
+.sticky-cta .btn,
+.topbar__actions .btn{
+  flex:1;
+  width:100%;
+  min-width:0;
+  height:52px;
+  padding:0 20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  box-sizing:border-box;
+  font-size:17px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+/* 모바일 */
+@media (max-width:768px){
+  .qr_cards{
+  .qr_cards{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+    gap:16px;
+  }
+.qr_frame{
+  height:180px;
+}
+  
+
+  .qr_img,
+  .ucrm_img{
+    width:160px;
+    height:160px;
+  }
+
+  .hero_cta .btn,
+  .cta-box__actions .btn,
+  .sticky-cta .btn,
+  .topbar__actions .btn{
+    height:50px;
+    font-size:16px;
+  }
 }
