@@ -241,7 +241,7 @@ consentConfirm?.addEventListener("click", function () {
   }
 });
 
-/* 지역별 전화 버튼 */
+/* 매장 전화 버튼 */
 ["btnCallTop", "btnCallHero", "btnCallBottom", "btnCallFab", "btnCallSticky"].forEach(function (id) {
   const el = document.getElementById(id);
   if (!el) return;
