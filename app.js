@@ -434,3 +434,12 @@ function closeImageModal() {
   const oldModal = document.getElementById("runtimeImageModal");
   if (oldModal) oldModal.remove();
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('quickPolicyBtn');
+  if (!btn) return;
+
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    openConsent(null);
+  });
+});
