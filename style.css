@@ -2139,3 +2139,24 @@ padding:80px 20px;
     appearance: none !important;
   }
 }
+.qr_frame a {
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.qr_frame img {
+  transition: all 0.25s ease;
+  border-radius: 12px;
+}
+
+/* 마우스 올렸을 때 */
+.qr_frame a:hover img {
+  transform: scale(1.07);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* 클릭할 때 */
+.qr_frame a:active img {
+  transform: scale(0.96);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
